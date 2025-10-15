@@ -28,9 +28,9 @@ body{
     background-color:hsla(30, 74%, 79%, 0.7);
     margin:auto;
     padding: 0.5rem;
-    border: 5px solid #0f0f0f;
-    max-width: 200px;
-    font-size: 8px;
+    border: 2px solid #0f0f0f;
+    max-width: 350px;
+    font-size: 10px;
 }
 
 
@@ -295,5 +295,6 @@ h2:hover::before {
     size: 2px;
 
   }
+
 
 }
