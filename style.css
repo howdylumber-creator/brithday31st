@@ -1,0 +1,299 @@
+body {
+    font-family: "Delius",sans-serif ;
+}
+
+h1{
+  color: #97fefe;
+  font-size: medium;
+ 
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(92, 92, 189);
+    
+}
+
+body{
+    background-image: url(riding.jpg);
+    background-size: 500px;
+    padding: 1rem;
+}
+
+
+.wrapper{
+    background-color:hsla(30, 74%, 79%, 0.7);
+    margin:auto;
+    padding: 0.5rem;
+    border: 5px solid #0f0f0f;
+    max-width: 200px;
+    font-size: 8px;
+}
+
+
+img{
+
+  max-width: 250px;
+  max-height: 300px;
+}
+
+footer{
+  display: contents;
+  text-align: center;
+  max-width: 500px;
+  max-height: auto;
+  margin: auto;
+
+}
+
+footer label{
+  font-weight: 300;
+  font-size: 30px;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+
+
+.button:hover {
+  background-image: url(BBQ.png);
+}
+
+
+
+p{
+  transition:none;
+}
+p:hover {
+  text-shadow: #0a2342;
+  
+}
+  
+header {
+  width: 200px;
+  height: 350px;
+  background-image:url(Me.jpg);
+  background-repeat: no-repeat;
+  background-size:200px 350px;
+  margin: auto;
+  justify-items: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+header span {
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #0ff 0deg, 
+    #0a2342 120deg, 
+    #0ff 240deg
+  );
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+
+header:hover {
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
+header:hover::before {
+  opacity: 0.5;
+  transform: scale(2);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20;
+
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  background: rgb(90, 193, 222);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after,
+h2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+h2::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+h2:hover::after,
+h2:hover::before {
+  transform: scaleX(1);
+}
+
+@media screen and ( min-width:600px) { 
+
+
+  h1{
+    color: #97fefe;
+    font-size: medium;
+  
+  }
+
+  header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: rgb(92, 92, 189);
+      
+  }
+
+  body{
+      background-image: url(riding.jpg);
+      background-size: 700px;
+      padding: 0.5rem;
+  }
+
+
+  .wrapper{
+      background-color:hsla(30, 74%, 79%, 0.7);
+      padding: 0.5rem;
+      border: 5px solid #0f0f0f;
+      max-width: 850px;
+      font-size: 12px;
+  }
+
+
+  img{
+
+    max-width: 250px;
+    max-height: 300px;
+  }
+
+  footer{
+    display: contents;
+    text-align: center;
+    max-width: 500px;
+    max-height: auto;
+    margin: auto;
+
+  }
+
+  footer label{
+    font-weight: 300;
+    font-size: 30px;
+    margin: auto;
+    padding-bottom: 5rem;
+  }
+
+
+
+  .button:hover {
+    background-image: url(BBQ.png);
+  }
+
+
+
+  p{
+    transition:none;
+  }
+  p:hover {
+    text-shadow: #0a2342;
+    
+  }
+    
+  header {
+    width: 500px;
+    height: 650px;
+    background-image:url(Me.jpg);
+    background-repeat: no-repeat;
+    background-size:500px 650px;
+    margin: auto;
+    justify-items: center;
+
+  }
+
+}
+
+
+@media screen and ( min-width: 1080px) {
+
+  header {
+
+    width: 600px;
+    height: 400px;
+    background-image:url(Me.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: auto;
+    justify-items: center;
+
+  }
+
+  body{
+
+      background-image: url(riding.jpg);
+      background-size: 1080px;
+      padding: 3rem;
+  } 
+
+
+  .wrapper{
+      background-color:hsla(30, 74%, 79%, 0.7);
+      margin: 5rem;
+      padding: 5rem;
+      border: 5px solid #0f0f0f;
+      max-width: 1080px;
+      font-size: 20px;
+  }
+
+  h2{
+
+    text-align: center;
+    size: 2px;
+
+  }
+
+}
