@@ -36,8 +36,8 @@ body{
 
 img{
 
-  max-width: 250px;
-  max-height: 300px;
+  max-width: 150px;
+  max-height: 200px;
 }
 
 footer{
@@ -51,7 +51,7 @@ footer{
 
 footer label{
   font-weight: 300;
-  font-size: 30px;
+  font-size: 15px;
   margin: auto;
   padding-bottom: 5rem;
 }
@@ -73,11 +73,11 @@ p:hover {
 }
   
 header {
-  width: 200px;
-  height: 350px;
+  width: 350px;
+  height: 230px;
   background-image:url(Me.jpg);
   background-repeat: no-repeat;
-  background-size:200px 350px;
+  background-size: 350px 230px;
   margin: auto;
   justify-items: center;
   
@@ -298,4 +298,5 @@ h2:hover::before {
 
 
 }
+
 
